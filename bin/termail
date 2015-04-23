@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+# -*- mode: ruby -*-
+
+require "termail/cli"
+Termail::Cli.start
