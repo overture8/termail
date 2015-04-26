@@ -1,5 +1,7 @@
 # Termail
 
+[![Build Status](https://travis-ci.org/overture8/termail.svg)](https://travis-ci.org/overture8/termail)
+
 (WIP!!! Don't use yet) Termail is a terminal based email client for Gmail, written in Ruby.
 
 ## Installation
