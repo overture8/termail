@@ -8,14 +8,16 @@ module Termail
         password = Termail.configuration.accounts[0][:password]
         gmail = Gmail.connect(email, password)
 
-        output = ""
+        output = []
 
         gmail.inbox.emails.each do |email|
-          output << email.message.from.join(", ") << "\n"
-          output << email.message.date.strftime("%-d %B %-l:%M%P")
+          output_item = ""
+          output_item << email.message.from.join(", ") << "\n"
+          output_item << email.message.date.strftime("%-d %B %-l:%M%P")
+          output << output_item
         end
 
-        output
+        output.join("\n\n")
       end
     end
   end
