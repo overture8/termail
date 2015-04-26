@@ -9,7 +9,7 @@ module Termail
       cmd = nil
 
       until ['q', ':q', 'quit', 'exit'].include? cmd
-        print '[overture8]: '
+        print '[termail]: '
         cmd = gets; cmd.chomp!
         puts Termail::View::Inbox.new.render if cmd == 'inbox'
       end
