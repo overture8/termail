@@ -1,6 +1,6 @@
 $:.unshift File.dirname(__FILE__)
 require 'test_helper'
-require 'termail/views/inbox'
+require 'termail/view/inbox'
 
 class TestConfiguration < Minitest::Test
   def setup
